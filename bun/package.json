@@ -1,0 +1,25 @@
+{
+  "name": "generative-agent-simulation",
+  "version": "0.1.0",
+  "description": "A TypeScript implementation of the Generative Agent Simulations of 1,000 People",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun --watch run src/index.ts",
+    "simulate": "bun run src/multi-agent-simulation.ts",
+    "test": "bun test",
+    "debug-env": "bun run src/debug-env.ts",
+    "list-agents": "bun run src/list-agents.ts",
+    "create-agent": "bun run src/create-agent.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.7",
+    "bun-types": "latest",
+    "typescript": "^5.3.3"
+  }
+}
